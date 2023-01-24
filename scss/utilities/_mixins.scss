@@ -1,0 +1,17 @@
+@mixin funcion-imagenes($imagen){
+    position: absolute;
+
+    top: 20%;
+    width: 100%;
+    height: 75%;
+
+    background: rgba(0, 0, 0, 0);
+
+    background-size: 100% 100%;
+    object-fit: contain;
+    position: absolute;
+
+    background: $imagen //url('../assets/img/memoriaram-geil-2x8.png') no-repeat center center / contain;
+
+}
+
