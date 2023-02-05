@@ -51,8 +51,12 @@
 
 .nav li {
     display: inline-block;
-    padding: 10px 20px;
+    padding: 8px 10px;
     font-family: $tipografia;
+    width: 20%;
+    height: 100%;
+    justify-content: center;
+    text-align: center;
 }
 
 .nav li:hover {

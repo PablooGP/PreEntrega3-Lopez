@@ -31,8 +31,8 @@
 
 footer {
     position: fixed;
-    width: 100%;
     height: 30px;
+    width: 100%;
     bottom: 0;
     text-align: center;
     padding: 0px;
@@ -44,7 +44,7 @@ footer {
 
 .footer-lista {
 
-    position: relative;
+    position: absolute;
     height: 100%;
 
     background-color: transparent;
@@ -52,7 +52,7 @@ footer {
 }
 
 .footer-lista li {
-    display: inline-table;
+    display:inline;
     padding: 6px 14px;
     font-family: $tipografia;
 
@@ -207,7 +207,7 @@ footer {
     top: 25px;
     margin: auto;
     width: 80%;
-    height: 200px;
+    height: 300px;
     z-index: 25;
     background-color: $color-principal-pagina;
     display: flex;
@@ -245,7 +245,7 @@ footer {
     top: 75px;
     margin: auto;
     width: 80%;
-    height: 150px;
+    height: 990px;
     z-index: 25;
     background-color: $color-principal-pagina;
     display: flex;
@@ -264,7 +264,7 @@ footer {
     top: 100px;
     margin: auto;
     width: 80%;
-    height: 150px;
+    height: 175px;
     z-index: 25;
     background-color: $color-principal-pagina;
     display: flex;
@@ -320,7 +320,7 @@ footer {
 .contacto-lista {
     position: relative;
     width: 100%;
-    height: 50px;
+    height: 100px;
     padding-left: 0px;
     background-color: transparent;
     text-align: center;
@@ -335,20 +335,21 @@ footer {
     font-family: $tipografia;
 }
 
-.frame-contacto {
-    position: absolute;
+.frame-contacto-wa {
 
-    width: 200px;
-    height: 200px;
-    z-index: 25;
-    background-color: $color-principal-pagina;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    fill-opacity: 0%;
+    @include function-createframe-contacto(75px);
 
-    box-shadow: 4px -4px 4px rgba(0, 0, 0, 0.25), -4px 4px 4px rgba(0, 0, 0, 0.25), -4px -4px 4px rgba(0, 0, 0, 0.25), 4px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 15px;
+}
+
+.frame-contacto-ig {
+
+    @include function-createframe-contacto(110px)
+
+}
+
+.frame-contacto-fb {
+
+    @include function-createframe-contacto(150px)
 
 }
 

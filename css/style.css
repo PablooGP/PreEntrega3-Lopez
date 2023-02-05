@@ -49,8 +49,12 @@
 
 .nav li {
   display: inline-block;
-  padding: 10px 20px;
-  font-family: "Sofia Sans", sans-serif; }
+  padding: 8px 10px;
+  font-family: "Sofia Sans", sans-serif;
+  width: 20%;
+  height: 100%;
+  justify-content: center;
+  text-align: center; }
 
 .nav li:hover {
   background-color: #000000; }
@@ -150,8 +154,8 @@
 
 footer {
   position: fixed;
-  width: 100%;
   height: 30px;
+  width: 100%;
   bottom: 0;
   text-align: center;
   padding: 0px;
@@ -161,13 +165,13 @@ footer {
   z-index: 50; }
 
 .footer-lista {
-  position: relative;
+  position: absolute;
   height: 100%;
   background-color: transparent;
   text-align: center; }
 
 .footer-lista li {
-  display: inline-table;
+  display: inline;
   padding: 6px 14px;
   font-family: "Sofia Sans", sans-serif; }
 
@@ -375,7 +379,7 @@ footer {
   top: 25px;
   margin: auto;
   width: 80%;
-  height: 200px;
+  height: 300px;
   z-index: 25;
   background-color: #fd6100;
   display: flex;
@@ -405,7 +409,7 @@ footer {
   top: 75px;
   margin: auto;
   width: 80%;
-  height: 150px;
+  height: 990px;
   z-index: 25;
   background-color: #fd6100;
   display: flex;
@@ -420,7 +424,7 @@ footer {
   top: 100px;
   margin: auto;
   width: 80%;
-  height: 150px;
+  height: 175px;
   z-index: 25;
   background-color: #fd6100;
   display: flex;
@@ -454,7 +458,7 @@ footer {
 .contacto-lista {
   position: relative;
   width: 100%;
-  height: 50px;
+  height: 100px;
   padding-left: 0px;
   background-color: transparent;
   text-align: center;
@@ -467,8 +471,8 @@ footer {
   padding: 5px 5px;
   font-family: "Sofia Sans", sans-serif; }
 
-.frame-contacto {
-  position: absolute;
+.frame-contacto-wa {
+  position: relative;
   width: 200px;
   height: 200px;
   z-index: 25;
@@ -477,6 +481,38 @@ footer {
   flex-direction: column;
   align-items: center;
   fill-opacity: 0%;
+  top: 75px;
+  margin: auto;
+  box-shadow: 4px -4px 4px rgba(0, 0, 0, 0.25), -4px 4px 4px rgba(0, 0, 0, 0.25), -4px -4px 4px rgba(0, 0, 0, 0.25), 4px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 15px; }
+
+.frame-contacto-ig {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  z-index: 25;
+  background-color: #fd6100;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  fill-opacity: 0%;
+  top: 110px;
+  margin: auto;
+  box-shadow: 4px -4px 4px rgba(0, 0, 0, 0.25), -4px 4px 4px rgba(0, 0, 0, 0.25), -4px -4px 4px rgba(0, 0, 0, 0.25), 4px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 15px; }
+
+.frame-contacto-fb {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  z-index: 25;
+  background-color: #fd6100;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  fill-opacity: 0%;
+  top: 150px;
+  margin: auto;
   box-shadow: 4px -4px 4px rgba(0, 0, 0, 0.25), -4px 4px 4px rgba(0, 0, 0, 0.25), -4px -4px 4px rgba(0, 0, 0, 0.25), 4px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 15px; }
 
@@ -666,7 +702,7 @@ footer {
     top: 0px;
     margin: auto;
     width: 90%;
-    height: 250px;
+    height: 350px;
     z-index: 25;
     background-color: #ff6000;
     display: flex;
@@ -680,7 +716,7 @@ footer {
     top: 35px;
     margin: auto;
     width: 90%;
-    height: 175px;
+    height: 240px;
     z-index: 25;
     background-color: #ff6000;
     display: flex;
@@ -694,7 +730,7 @@ footer {
     top: 65px;
     margin: auto;
     width: 90%;
-    height: 170px;
+    height: 255px;
     z-index: 25;
     background-color: #ff6000;
     display: flex;
@@ -708,7 +744,7 @@ footer {
     top: 100px;
     margin: auto;
     width: 90%;
-    height: 150px;
+    height: 200px;
     z-index: 25;
     background-color: #ff6000;
     display: flex;
@@ -748,3 +784,30 @@ footer {
     height: 230px;
     background-color: transparent;
     outline: #000000; } }
+
+@media (max-width: 390px) {
+  .componentes-flexbox {
+    position: relative;
+    top: 25px;
+    width: 360px;
+    height: 1060px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-flow: wrap;
+    align-content: flex-start;
+    align-items: center;
+    background-color: transparent;
+    z-index: 5;
+    margin: auto;
+    max-width: 900px; }
+  .componente1 {
+    width: 170px;
+    height: 170px;
+    background-color: transparent;
+    outline: #000000; }
+  .divisor-final {
+    position: relative;
+    width: 100%;
+    height: 160px;
+    background-color: transparent; } }
